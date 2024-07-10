@@ -1,8 +1,13 @@
-import Header from "../componets/Header";
+import React from 'react';
 
-export default function Booking() {
+const Booking = () => {
+  return (
     <div>
-        <Header />
-        <h2> Booking page</h2>
+      <h2 className="text-gray-700 text-6xl font-semibold">Booking</h2>
+      <h3 className="text-2xl font-semibold">Make a reservation</h3>
+      {/* Add Booking page content here */}
     </div>
-}
+  );
+};
+
+export default Booking;

@@ -1,26 +1,22 @@
-
-import { BrowserRouter, Routes, Route} from 'react-router-dom'
-import Home from './pages/Home'
-import Booking from './pages/Booking'
-import About from './pages/About'
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Layout from './componets/Layout';
+import Home from './pages/Home';
+import About from './pages/About';
+import Booking from './pages/Booking';
 
 function App() {
-
-
-
   return (
-    <div>
-      <BrowserRouter>
+    <Router>
       <Routes>
+        <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/booking" element={<Booking />} />
-          <Route path="/about" element={<About />} />
+          <Route path="about" element={<About />} />
+          <Route path="booking" element={<Booking />} />
+        </Route>
       </Routes>
-      </BrowserRouter>
-
-    </div>
-  )
+    </Router>
+  );
 }
 
-export default App
+export default App;
