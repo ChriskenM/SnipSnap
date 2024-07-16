@@ -4,6 +4,8 @@ import Layout from './componets/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import Booking from './pages/Booking';
+import SignUp from './componets/SignUp';
+import SignIn from './componets/SignIn';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Route index element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="booking" element={<Booking />} />
+          <Route path="signup" element={<SignUp />} />
+          <Route path="signin" element={<SignIn />} />
         </Route>
       </Routes>
     </Router>

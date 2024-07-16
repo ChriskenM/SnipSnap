@@ -11,7 +11,7 @@ const Layout = () => {
       </div>
       <main className="px-16 py-6 md:col-span-2 bg-gray-100">
         <div className="flex justify-center md:justify-end">
-          <Link to="/login" className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</Link>
+          <Link to="/signin" className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Log in</Link>
           <Link to="/signup" className="btn text-primary ml-2 border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500">Sign up</Link>
         </div>
         <Outlet />
