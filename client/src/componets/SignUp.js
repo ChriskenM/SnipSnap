@@ -1,20 +1,30 @@
 
 import React, { useState } from 'react';
+import { signup } from '../services/api';
+import { useNavigate } from 'react-router-dom';
 
 const SignUp = () => {
   const [username, setUsername] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [error, setError] = useState('');
+  const navigate = useNavigate();
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // Handle sign up logic here
-    console.log('Sign up:', { username, email, password });
+    setError('');
+    try {
+      await signup({ username, email, password });
+      navigate('/signin'); // Redirect to sign in page after successful signup
+    } catch (error) {
+      setError(error.response?.data?.message || 'An error occurred during signup');
+    }
   };
 
   return (
     <div className="max-w-md mx-auto mt-10">
       <h2 className="text-2xl font-bold mb-5">Sign Up</h2>
+      {error && <p className="text-red-500 mb-3">{error}</p>}
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
           <label htmlFor="username" className="block mb-1">Username</label>
