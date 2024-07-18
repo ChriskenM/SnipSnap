@@ -7,9 +7,12 @@ import Booking from './pages/Booking';
 import SignUp from './componets/SignUp';
 import SignIn from './componets/SignIn';
 import BookingsList from './componets/BookingsList';
+import { AuthProvider } from './contexts/AuthContext';
 
 function App() {
   return (
+    <AuthProvider>
+
     <Router>
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -22,6 +25,7 @@ function App() {
         </Route>
       </Routes>
     </Router>
+    </AuthProvider>
   );
 }
 

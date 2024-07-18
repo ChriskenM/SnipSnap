@@ -1,4 +1,3 @@
-
 const Booking = require('../models/Booking');
 
 exports.createBooking = async (req, res) => {

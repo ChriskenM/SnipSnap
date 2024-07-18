@@ -1,4 +1,3 @@
-// src/components/BookingsList.js
 import React, { useState, useEffect } from 'react';
 import { getUserBookings, cancelBooking } from '../services/api';
 
@@ -38,8 +37,8 @@ const BookingsList = () => {
           <p className="mb-1"><strong>Type:</strong> {booking.hairstyleType}</p>
           <p className="mb-1"><strong>Date:</strong> {new Date(booking.dateTime).toLocaleString()}</p>
           <p className="mb-1"><strong>Music:</strong> {booking.music || 'Not specified'}</p>
-          <p className="mb-3"><strong>Status:</strong> {booking.isCancelled ? 'Cancelled' : 'Active'}</p>
-          {!booking.isCancelled && (
+          <p className="mb-3"><strong>Status:</strong> {booking.cancellation ? 'Cancelled' : 'Active'}</p>
+          {!booking.cancellation && (
             <button
               onClick={() => handleCancelBooking(booking._id)}
               className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600"
