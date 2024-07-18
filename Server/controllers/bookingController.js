@@ -26,3 +26,12 @@ exports.cancelBooking = async (req, res) => {
     res.status(500).json({ message: 'Error cancelling booking' });
   }
 };
+
+exports.getUserBookings = async (req, res) => {
+  try {
+    const bookings = await Booking.find({ user: req.userId });
+    res.json(bookings);
+  } catch (error) {
+    res.status(500).json({ message: 'Error fetching user bookings' });
+  }
+};
