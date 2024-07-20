@@ -86,14 +86,14 @@ const Booking = () => {
       </form>
 
       <div className="max-w-2xl space-y-4 pb-2 mt-12 border-b border-gray-200">
-      <p className='pb-2'>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        <p className='pb-2'>
+           Booking Your Perfect Hairstyle with SnipSnap
         </p>
         <p className='pb-2'>
-          Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+        Welcome to the SnipSnap booking page, where your journey to fabulous hair begins! We've designed our booking process to be simple, intuitive, and tailored to your needs. Whether you're looking for a quick trim or an elaborate style for a special occasion, we've got you covered.
         </p>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        We understand that plans can change, which is why we've made our cancellation process just as straightforward as our booking process. You can cancel or reschedule your appointment up to 24 hours before the scheduled time without any penalty. To do so, simply log into your SnipSnap account, go to your bookings, and select the appointment you wish to modify. Follow the prompts to cancel or choose a new date and time.
         </p>
       </div>
       <h4 className="font-bold pb-2 mt-12 border-b border-gray-200">SS</h4>

@@ -15,12 +15,20 @@ const Layout = () => {
       <main className="px-16 py-6 md:col-span-2 bg-gray-100">
         <div className="flex justify-center md:justify-end">
           {isAuthenticated ? (
+            <>
+              <Link
+                to="/bookings"
+                className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500 mr-2"
+              >
+                My Bookings
+              </Link>
             <button
               onClick={logout}
               className="btn text-primary border-primary md:border-2 hover:bg-primary hover:text-white transition ease-out duration-500"
             >
               Log out
             </button>
+            </>
           ) : (
             <>
               <Link

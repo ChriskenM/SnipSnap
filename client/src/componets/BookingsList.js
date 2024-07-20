@@ -32,7 +32,7 @@ const BookingsList = () => {
       <h2 className="text-2xl font-bold mb-5">Your Bookings</h2>
       {error && <p className="text-red-500 mb-3">{error}</p>}
       {bookings.map((booking) => (
-        <div key={booking._id} className="bg-white shadow-md rounded-lg p-6 mb-4">
+        <div key={booking._id} className="bg-white shadow-md rounded-lg p-6 mb-4 pb-2">
           <h3 className="text-xl font-semibold mb-2">{booking.hairstyleName}</h3>
           <p className="mb-1"><strong>Type:</strong> {booking.hairstyleType}</p>
           <p className="mb-1"><strong>Date:</strong> {new Date(booking.dateTime).toLocaleString()}</p>
@@ -41,7 +41,7 @@ const BookingsList = () => {
           {!booking.cancellation && (
             <button
               onClick={() => handleCancelBooking(booking._id)}
-              className="bg-red-500 text-white py-2 px-4 rounded-md hover:bg-red-600"
+              className=" bg-secondary-100 text-secondary-200 inline-block hover:shadow-inner transform hover:scale-125 hover:bg-opacity-50 transition ease-out duration-300 cursor-pointer"
             >
               Cancel Booking
             </button>

@@ -8,25 +8,25 @@ const About = () => {
       <h3 className="text-2xl font-semibold mb-6">Learn more about SnipSnap</h3>
 
       <div className="max-w-2xl space-y-4">
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        <p className='pb-2'>
+        Welcome to SnipSnap - Your Premier African Hairstyling Platform
         </p>
-        <p>
-          Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+        <p className='pb-2'>
+          At SnipSnap, we're passionate about celebrating the beauty and diversity of African hair. Born out of a desire to revolutionize the hairstyling experience across the continent, our platform bridges the gap between talented stylists and discerning clients. We understand that your hair is more than just an accessory - it's an expression of your identity, culture, and creativity
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        <p className='pb-2'>
+        We recognized the challenges faced by both clients in finding the right stylists and by talented hair artists in showcasing their skills. Thus, SnipSnap was born - a platform that not only connects but also educates and inspires
         </p>
-        <p>
-          Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+        <p className='pb-2'>
+        Our platform is more than just a booking app; it's a community where users can share styles, recommend stylists, and access valuable hair care tips to all hair types.
         </p>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.
+        <p className='pb-2'>
+        We take pride in our inclusive approach. Whether you're a high-end salon in the heart of Lagos or a skilled home-based stylist in rural Kenya, SnipSnap provides a platform for you to shine. For clients, this means unprecedented access to a wide range of talented professionals and styles, from traditional techniques to the latest trends.
         </p>
-        <p>
-          Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio. Proin quis tortor orci. Etiam at risus et justo dignissim congue. Donec congue lacinia dui, a porttitor lectus condimentum laoreet.
+        <p className='pb-2'>
+        As we grow, our commitment remains steadfast: to empower both stylists and clients, to preserve and promote African hairstyling traditions, and to continually innovate our platform based on your feedback. At SnipSnap, we're not just booking appointments; we're weaving connections, one strand at a time. Join us in this exciting journey of self-expression, community, and beautiful hair!
         </p>
-        <p>
+        <p className='pb-2'>
           For more information, please contact us at:{' '}
           <a href="mailto:info@snipsnap.com" className="text-primary hover:underline">
             info@snipsnap.com
