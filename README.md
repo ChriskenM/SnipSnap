@@ -1,5 +1,5 @@
 
-#SnipSnap
+# SnipSnap
 
 ## Description
 This App is a full-stack web application that allows users to list their work, get latest trends and to book hairstyle appointments. It features user authentication, booking creation, and management of bookings including cancellation.
@@ -15,6 +15,7 @@ This App is a full-stack web application that allows users to list their work, g
 - [API Endpoints](#api-endpoints)
 - [Contributing](#contributing)
 - [License](#license)
+- [Project Tree](#project-tree)
 
 ## Features
 - User registration and authentication
@@ -108,8 +109,7 @@ The application should now be running on `http://localhost:3000`
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 
-
-
+## Project Tree
 ```
 ├─ .gitignore
 ├─ client
@@ -129,9 +129,14 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 │  │  ├─ App.js
 │  │  ├─ App.test.js
 │  │  ├─ componets
+│  │  │  ├─ BookingsList.js
 │  │  │  ├─ Card.js
 │  │  │  ├─ Layout.js
-│  │  │  └─ Navbar.js
+│  │  │  ├─ Navbar.js
+│  │  │  ├─ SignIn.js
+│  │  │  └─ SignUp.js
+│  │  ├─ contexts
+│  │  │  └─ AuthContext.js
 │  │  ├─ index.css
 │  │  ├─ index.html
 │  │  ├─ index.js
@@ -140,14 +145,29 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 │  │  │  ├─ Booking.js
 │  │  │  └─ Home.js
 │  │  ├─ reportWebVitals.js
+│  │  ├─ services
+│  │  │  └─ api.js
 │  │  ├─ setupTests.js
 │  │  └─ styles.css
 │  ├─ tailwind-default.config.js
 │  └─ tailwind.config.js
 ├─ README.md
 └─ Server
+   ├─ config
+   │  └─ db.js
+   ├─ controllers
+   │  ├─ authController.js
+   │  └─ bookingController.js
+   ├─ middleware
+   │  └─ auth.js
+   ├─ models
+   │  ├─ Booking.js
+   │  └─ User.js
    ├─ package-lock.json
    ├─ package.json
+   ├─ routes
+   │  ├─ authRoutes.js
+   │  └─ bookingRoutes.js
    └─ server.js
 
 ```
